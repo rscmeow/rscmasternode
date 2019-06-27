@@ -1,5 +1,5 @@
-# SCIO coin masternode script
+# Red Space coin masternode script
 
 
-wget -q https://raw.githubusercontent.com/Lazzardev/sciomasternode/master/Masternode.sh && bash Masternode.sh
+wget -q https://raw.githubusercontent.com/rscmeow/rscmasternode/master/Masternode.sh && bash Masternode.sh
 
