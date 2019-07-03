@@ -38,10 +38,10 @@ read DOSETUPTWO
 
 if [[ $DOSETUPTWO =~ "y" ]] ; then
 
-scio-cli stop > /dev/null 2>&1
-wget https://raw.githubusercontent.com/Lazzardev/sciomasternode/master/sciod -O /usr/local/bin/sciod
-wget https://raw.githubusercontent.com/Lazzardev/sciomasternode/master/scio-cli -O /usr/local/bin/scio-cli
-chmod +x /usr/local/bin/scio*
+redspace-cli stop > /dev/null 2>&1
+wget https://raw.githubusercontent.com/rscmeow/rscmasternode/master/redspaced -O /usr/local/bin/redspaced
+wget https://raw.githubusercontent.com/rscmeow/rscmasternode/master/redspace-cli -O /usr/local/bin/redspace-cli
+chmod +x /usr/local/bin/redspace*
 
 fi
 
@@ -74,8 +74,8 @@ echo ""
 echo "Enter masternode private key for node $ALIAS , Go To your Windows Wallet Tools > Debug Console , Type masternode genkey"
 read PRIVKEY
 
-CONF_DIR=~/.SCIO/
-CONF_FILE=scio.conf
+CONF_DIR=~/.redspace/
+CONF_FILE=redspace.conf
 PORT=7770
 
 mkdir -p $CONF_DIR
@@ -92,5 +92,4 @@ echo "port=$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeaddr=$IP:$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
 
-sciod -daemon
-
+redspaced -daemon
