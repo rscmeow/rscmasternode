@@ -74,7 +74,7 @@ echo ""
 echo "Enter masternode private key for node $ALIAS , Go To your Windows Wallet Tools > Debug Console , Type createmasternodekey"
 read PRIVKEY
 
-CONF_DIR=~/.REDSPACE/
+CONF_DIR=~/.redspace/
 CONF_FILE=redspace.conf
 PORT=54500
 
