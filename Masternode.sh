@@ -76,7 +76,7 @@ read PRIVKEY
 
 CONF_DIR=~/.redspace/
 CONF_FILE=redspace.conf
-PORT=7770
+PORT=54500
 
 mkdir -p $CONF_DIR
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` > $CONF_DIR/$CONF_FILE
