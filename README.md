@@ -1,5 +1,4 @@
-# Red Space coin masternode script
+# Red Space coin 
 
 
-wget -q https://raw.githubusercontent.com/rscmeow/rscmasternode/master/Masternode.sh && bash Masternode.sh
 

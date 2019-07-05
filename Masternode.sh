@@ -71,7 +71,7 @@ fi
 
 echo "IP Done"
 echo ""
-echo "Enter masternode private key for node $ALIAS , Go To your Windows Wallet Tools > Debug Console , Type masternode genkey"
+echo "Enter masternode private key for node $ALIAS , Go To your Windows Wallet Tools > Debug Console , Type createmasternodekey"
 read PRIVKEY
 
 CONF_DIR=~/.redspace/
